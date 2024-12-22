@@ -1,0 +1,81 @@
+<!-- 
+ Create a contact form with the following fields:
+• Full name (text input)
+• Email (email input)
+• Phone number (tel input)
+• Subject (dropdown menu)
+• Message (textarea)
+• Submit button -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container
+        {
+            box-sizing: border-box;
+        }
+        h1
+        {
+            text-align: center;
+        }
+        .form
+        {
+            border: 2px solid;
+            box-shadow: 2px 2px 5px black;
+            max-width: 480px;
+            margin: auto;
+            margin-top: 20px;
+            padding: 20px;
+            line-height: 40px;
+
+        }
+        form label
+        {
+            display: block;
+            font-size: 20px;
+        }
+        input,select,textarea
+        {
+           padding: 5px;
+           width: 100%;
+        }
+        textarea
+        {
+            height: 170px;
+        }
+        input[type='submit']
+        {
+            background-color: green;
+            color: white;
+        }
+        
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Registration Form</h1>
+        <div class="form">
+            <form action="post">
+                <label for="full name">Full Name</label>
+                <input type="text" name="name" placeholder="Enter your name">
+                <label for="email">Email</label>
+                <input type="text" name="name" placeholder="Enter Email id">
+                <label for="Phnom">Phone Number</label>
+                <input type="number" name="name" placeholder="Enter Phone Number">
+                <label for="Subject">Subject</label>
+                <select name="subject">
+                    <option value="python">----select----</option>
+                    <option value="python">python</option>
+                    <option value="ms">mern stack</option>
+                    <option value="wd">Web developement</option>
+                </select>
+                <label for="Message">Message</label>
+                <textarea name="message" id="" placeholder="Enter Any Message"></textarea>
+                <input type="Submit" name="" id="">
+        </div>
+    </div>
+</body>
+</html>

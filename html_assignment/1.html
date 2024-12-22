@@ -1,0 +1,121 @@
+<!-- 
+ Create a simple HTML webpage that includes:
+• A header (<header>), footer (<footer>), main section (<main>), and aside section
+(<aside>).
+• A paragraph with some basic text.
+• A list (both ordered and unordered).
+• A link that opens in a new tab.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container
+        {
+            background-color: aqua;
+            padding: 10px;
+        }
+        .header,.footer
+        {
+            background-color: beige;
+        }
+        .header h1
+        {
+            text-align: center;
+            font-size: 50px;
+        }
+       .menu
+       {
+            width: auto;
+            height: 400px;
+            padding: 20px;
+            background-color: white;
+            display: flex;
+            gap: 20px;
+       }
+       .aside
+       {
+            background-color: burlywood;
+            width: 25%;
+       }
+       .aside1
+       {
+            background-color: darkmagenta;
+            width: 50%;
+       }
+       .aside1 h1
+       {
+         text-align: center;
+         text-decoration: underline;
+       }
+       .aside1 h2
+       {
+            margin-left: 6px;
+       }
+       .aside2
+       {
+            background-color: darkcyan;
+            width: 25%;
+       }
+       .link
+       {
+        margin-top: 20px;
+        padding: 10px;
+        background-color: black;
+        text-align: center;
+       }
+       .link a
+       {
+            text-decoration: none;
+            font-size: 40px;
+            font-weight: bold;
+       }
+       .footer h1
+       {
+        text-align: center;
+        font-size: 40px;
+        margin: 0;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>This is header </h1>
+        </div>
+        <div class="menu"> 
+            <div class="aside">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae eos sunt consequatur harum ab culpa quis sed quidem sit eum obcaecati, a dignissimos voluptates corrupti rem ducimus iure ipsum neque saepe maiores quibusdam. Corrupti, incidunt dignissimos nobis ipsum eum ut illo porro. At, pariatur modi.</p>
+            </div>
+            <div class="aside1">
+                <h1>Order and Unorder list</h1>
+                <h2>Order list</h2>
+                <ol>
+                    <li>hello </li>
+                    <li>hello </li>
+                    <li>hello </li>
+                </ol>
+                <h2>Unorder list</h2>
+                <ul>
+                    <li>world</li>
+                    <li type="circle">world</li>
+                    <li type="square">world</li>
+                </ul>
+            </div>
+            <div class="aside2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae eos sunt consequatur harum ab culpa quis sed quidem sit eum obcaecati, a dignissimos voluptates corrupti rem ducimus iure ipsum neque saepe maiores quibusdam. Corrupti, incidunt dignissimos nobis ipsum eum ut illo porro. At, pariatur modi.</p>
+            </div>
+        </div>
+        <div class="link">
+            <a href="https://www.tops-int.com/" target="_blank">Click here to visit</a>
+        </div>
+        <div class="footer">
+            <h1>This is footer</h1>
+        </div>
+    </div>
+</body>
+</html>
